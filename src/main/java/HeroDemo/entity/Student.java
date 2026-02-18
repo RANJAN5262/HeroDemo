@@ -1,4 +1,4 @@
-package entity;
+package HeroDemo.entity;
 
 import jakarta.persistence.*;
 

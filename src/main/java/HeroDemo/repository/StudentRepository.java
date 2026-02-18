@@ -1,6 +1,6 @@
-package repository;
+package HeroDemo.repository;
 
-import entity.Student;
+import HeroDemo.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface StudentRepository extends JpaRepository<Student, Long> {

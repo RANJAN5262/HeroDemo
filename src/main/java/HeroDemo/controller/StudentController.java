@@ -1,9 +1,9 @@
-package controller;
+package HeroDemo.controller;
 
-import entity.Student;
+import HeroDemo.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.StudentService;
+import HeroDemo.service.StudentService;
 
 import java.util.List;
 
