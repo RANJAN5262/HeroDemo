@@ -6,11 +6,13 @@ spring:
     url: jdbc:postgresql://localhost:5432/HeroDemo
     username: postgres
     password: Ravi1995@
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: update   # options: validate | none | update | create | create-drop
     show-sql: true
     properties:
       hibernate:
+        format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
