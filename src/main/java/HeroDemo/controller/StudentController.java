@@ -8,7 +8,7 @@ import HeroDemo.service.StudentService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/students")
+@RequestMapping("/public/students")
 public class StudentController {
 
     @Autowired

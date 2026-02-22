@@ -2,6 +2,8 @@ package HeroDemo.service;
 
 import HeroDemo.entity.Emp;
 import HeroDemo.repository.EmpRepo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,13 +13,15 @@ import java.util.Optional;
 public class EmpService {
 
     private final EmpRepo empRepo;
-
+    @Autowired
+    PasswordEncoder passwordEncoder;
     public EmpService(EmpRepo empRepo) {
         this.empRepo = empRepo;
     }
 
     // Create / Save
     public Emp saveEmp(Emp emp) {
+        emp.setPassword(passwordEncoder.encode(emp.getPassword()));
         return empRepo.save(emp);
     }
 

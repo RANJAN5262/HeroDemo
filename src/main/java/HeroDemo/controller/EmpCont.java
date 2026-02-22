@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/emp")
+@RequestMapping("/public/emp")
 public class EmpCont {
 
     private final EmpService empService;
